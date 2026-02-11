@@ -1,9 +1,19 @@
-import ContactForm from "../components/contact/contact-form"
+import Head from "next/head";
+import ContactForm from "../components/contact/contact-form";
 
 function ContactPage() {
   return (
-    <ContactForm/>
-  )
+    <>
+      <Head>
+        <title>Contact Me</title>
+        <meta
+          name="description"
+          description="Send me your messages"
+        />
+      </Head>
+      <ContactForm />
+    </>
+  );
 }
 
-export default ContactPage
+export default ContactPage;
